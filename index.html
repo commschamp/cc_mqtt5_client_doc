@@ -181,7 +181,7 @@ Client Allocation</h1>
 <div class="line"> </div>
 <div class="line">MyClientPtr clientPtr(::<a class="code" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc</a>());</div>
 <div class="line"><a class="code" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> client = clientPtr.get();</div>
-</div><!-- fragment --><p><b>IMPORTANT:</b> The functino <b><a class="el" href="group__client.html#ga0c7322dcd97fc1c40326147532c561ad" title="Free previously allocated client.">cc_mqtt5_client_free()</a></b> must <b>NOT</b> be called from within a callback. Use next event loop iteration.</p>
+</div><!-- fragment --><p><b>IMPORTANT:</b> The function <b><a class="el" href="group__client.html#ga0c7322dcd97fc1c40326147532c561ad" title="Free previously allocated client.">cc_mqtt5_client_free()</a></b> must <b>NOT</b> be called from within a callback. Use next event loop iteration.</p>
 <h1><a class="anchor" id="cc_mqtt5_client_callbacks"></a>
 "Must Have" Callbacks Registration</h1>
 <p>In order to properly function the library requires setting several callbacks.</p>

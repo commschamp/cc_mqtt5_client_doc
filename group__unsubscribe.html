@@ -82,9 +82,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga38723918235368b3947ba72633130c8a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__unsubscribe.html#ga38723918235368b3947ba72633130c8a">CC_Mqtt5UnsubscribeCompleteCb</a>) (void *data, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5UnsubscribeResponse.html">CC_Mqtt5UnsubscribeResponse</a> *response)</td></tr>
-<tr class="memdesc:ga38723918235368b3947ba72633130c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report completion of the "unsubscribe" operation.  <a href="group__unsubscribe.html#ga38723918235368b3947ba72633130c8a">More...</a><br /></td></tr>
-<tr class="separator:ga38723918235368b3947ba72633130c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0215df458f9235b3e2371667755e989d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__unsubscribe.html#ga0215df458f9235b3e2371667755e989d">CC_Mqtt5UnsubscribeCompleteCb</a>) (void *data, <a class="el" href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">CC_Mqtt5UnsubscribeHandle</a> handle, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5UnsubscribeResponse.html">CC_Mqtt5UnsubscribeResponse</a> *response)</td></tr>
+<tr class="memdesc:ga0215df458f9235b3e2371667755e989d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report completion of the "unsubscribe" operation.  <a href="group__unsubscribe.html#ga0215df458f9235b3e2371667755e989d">More...</a><br /></td></tr>
+<tr class="separator:ga0215df458f9235b3e2371667755e989d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ab1c795bfe02334906f1ecc0be921e5"><td class="memItemLeft" align="right" valign="top">typedef CC_Mqtt5Unsubscribe *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">CC_Mqtt5UnsubscribeHandle</a></td></tr>
 <tr class="memdesc:ga7ab1c795bfe02334906f1ecc0be921e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for "unsubscribe" operation.  <a href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">More...</a><br /></td></tr>
 <tr class="separator:ga7ab1c795bfe02334906f1ecc0be921e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,7 +109,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga902e65feaa5337fd659a9851569397ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">CC_Mqtt5UnsubscribeHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__unsubscribe.html#ga902e65feaa5337fd659a9851569397ec">cc_mqtt5_client_unsubscribe_prepare</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, <a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> *ec)</td></tr>
 <tr class="memdesc:ga902e65feaa5337fd659a9851569397ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare "unsubscribe" operation.  <a href="group__unsubscribe.html#ga902e65feaa5337fd659a9851569397ec">More...</a><br /></td></tr>
 <tr class="separator:ga902e65feaa5337fd659a9851569397ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c19d2c577daed73b9b8a5e6797f2234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__unsubscribe.html#ga5c19d2c577daed73b9b8a5e6797f2234">cc_mqtt5_client_unsubscribe_send</a> (<a class="el" href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">CC_Mqtt5UnsubscribeHandle</a> handle, <a class="el" href="group__unsubscribe.html#ga38723918235368b3947ba72633130c8a">CC_Mqtt5UnsubscribeCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memitem:ga5c19d2c577daed73b9b8a5e6797f2234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__unsubscribe.html#ga5c19d2c577daed73b9b8a5e6797f2234">cc_mqtt5_client_unsubscribe_send</a> (<a class="el" href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">CC_Mqtt5UnsubscribeHandle</a> handle, <a class="el" href="group__unsubscribe.html#ga0215df458f9235b3e2371667755e989d">CC_Mqtt5UnsubscribeCompleteCb</a> cb, void *cbData)</td></tr>
 <tr class="memdesc:ga5c19d2c577daed73b9b8a5e6797f2234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the configured "unsubscribe" operation to broker.  <a href="group__unsubscribe.html#ga5c19d2c577daed73b9b8a5e6797f2234">More...</a><br /></td></tr>
 <tr class="separator:ga5c19d2c577daed73b9b8a5e6797f2234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d61e66afa3339156e8f3c4b0a95189d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__unsubscribe.html#ga5d61e66afa3339156e8f3c4b0a95189d">cc_mqtt5_client_unsubscribe_set_response_timeout</a> (<a class="el" href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">CC_Mqtt5UnsubscribeHandle</a> handle, unsigned ms)</td></tr>
@@ -118,14 +118,14 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga38723918235368b3947ba72633130c8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga38723918235368b3947ba72633130c8a">&#9670;&nbsp;</a></span>CC_Mqtt5UnsubscribeCompleteCb</h2>
+<a id="ga0215df458f9235b3e2371667755e989d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0215df458f9235b3e2371667755e989d">&#9670;&nbsp;</a></span>CC_Mqtt5UnsubscribeCompleteCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_Mqtt5UnsubscribeCompleteCb) (void *data, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5UnsubscribeResponse.html">CC_Mqtt5UnsubscribeResponse</a> *response)</td>
+          <td class="memname">typedef void(* CC_Mqtt5UnsubscribeCompleteCb) (void *data, <a class="el" href="group__unsubscribe.html#ga7ab1c795bfe02334906f1ecc0be921e5">CC_Mqtt5UnsubscribeHandle</a> handle, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5UnsubscribeResponse.html">CC_Mqtt5UnsubscribeResponse</a> *response)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -134,6 +134,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to user data object passed as last parameter to the <b><a class="el" href="group__unsubscribe.html#ga5c19d2c577daed73b9b8a5e6797f2234" title="Send the configured &quot;unsubscribe&quot; operation to broker.">cc_mqtt5_client_unsubscribe_send()</a></b>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <b><a class="el" href="group__unsubscribe.html#ga902e65feaa5337fd659a9851569397ec" title="Prepare &quot;unsubscribe&quot; operation.">cc_mqtt5_client_unsubscribe_prepare()</a></b> function. When the callback is invoked the handle is already invalid and cannot be used in any relevant function invocation, but it allows end application to identify the original "unsubscribe" operation and use the same callback function in parallel requests. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>Status of the "unsubscribe" operation. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Response information from the broker. Not-NULL is reported <b>if and onfly if</b> the "status" is equal to <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da1612bd223303ddf181264c196d24855d">CC_Mqtt5AsyncOpStatus_Complete</a>. </td></tr>
   </table>
@@ -372,7 +373,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__unsubscribe.html#ga38723918235368b3947ba72633130c8a">CC_Mqtt5UnsubscribeCompleteCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__unsubscribe.html#ga0215df458f9235b3e2371667755e989d">CC_Mqtt5UnsubscribeCompleteCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>

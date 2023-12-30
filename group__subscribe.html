@@ -86,9 +86,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaf896acf9ea4e80d7bf8c91dbc0cdda97"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subscribe.html#gaf896acf9ea4e80d7bf8c91dbc0cdda97">CC_Mqtt5SubscribeCompleteCb</a>) (void *data, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5SubscribeResponse.html">CC_Mqtt5SubscribeResponse</a> *response)</td></tr>
-<tr class="memdesc:gaf896acf9ea4e80d7bf8c91dbc0cdda97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report completion of the "subscribe" operation.  <a href="group__subscribe.html#gaf896acf9ea4e80d7bf8c91dbc0cdda97">More...</a><br /></td></tr>
-<tr class="separator:gaf896acf9ea4e80d7bf8c91dbc0cdda97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e830ba5fe0ac04d19c72acc7a9eab26"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subscribe.html#ga6e830ba5fe0ac04d19c72acc7a9eab26">CC_Mqtt5SubscribeCompleteCb</a>) (void *data, <a class="el" href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">CC_Mqtt5SubscribeHandle</a> handle, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5SubscribeResponse.html">CC_Mqtt5SubscribeResponse</a> *response)</td></tr>
+<tr class="memdesc:ga6e830ba5fe0ac04d19c72acc7a9eab26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report completion of the "subscribe" operation.  <a href="group__subscribe.html#ga6e830ba5fe0ac04d19c72acc7a9eab26">More...</a><br /></td></tr>
+<tr class="separator:ga6e830ba5fe0ac04d19c72acc7a9eab26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6fbdce35052d6cbd1cb0e5e3995b4ccd"><td class="memItemLeft" align="right" valign="top">typedef CC_Mqtt5Subscribe *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">CC_Mqtt5SubscribeHandle</a></td></tr>
 <tr class="memdesc:ga6fbdce35052d6cbd1cb0e5e3995b4ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for "subscribe" operation.  <a href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">More...</a><br /></td></tr>
 <tr class="separator:ga6fbdce35052d6cbd1cb0e5e3995b4ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +129,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1cbf32eb3f9d11ae96e50d9570deb403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">CC_Mqtt5SubscribeHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subscribe.html#ga1cbf32eb3f9d11ae96e50d9570deb403">cc_mqtt5_client_subscribe_prepare</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, <a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> *ec)</td></tr>
 <tr class="memdesc:ga1cbf32eb3f9d11ae96e50d9570deb403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare "subscribe" operation.  <a href="group__subscribe.html#ga1cbf32eb3f9d11ae96e50d9570deb403">More...</a><br /></td></tr>
 <tr class="separator:ga1cbf32eb3f9d11ae96e50d9570deb403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadaeca4f9381ece1a7d23bb4a7a3ea7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subscribe.html#gadaeca4f9381ece1a7d23bb4a7a3ea7c8">cc_mqtt5_client_subscribe_send</a> (<a class="el" href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">CC_Mqtt5SubscribeHandle</a> handle, <a class="el" href="group__subscribe.html#gaf896acf9ea4e80d7bf8c91dbc0cdda97">CC_Mqtt5SubscribeCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memitem:gadaeca4f9381ece1a7d23bb4a7a3ea7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subscribe.html#gadaeca4f9381ece1a7d23bb4a7a3ea7c8">cc_mqtt5_client_subscribe_send</a> (<a class="el" href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">CC_Mqtt5SubscribeHandle</a> handle, <a class="el" href="group__subscribe.html#ga6e830ba5fe0ac04d19c72acc7a9eab26">CC_Mqtt5SubscribeCompleteCb</a> cb, void *cbData)</td></tr>
 <tr class="memdesc:gadaeca4f9381ece1a7d23bb4a7a3ea7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the configured "subscribe" operation to broker.  <a href="group__subscribe.html#gadaeca4f9381ece1a7d23bb4a7a3ea7c8">More...</a><br /></td></tr>
 <tr class="separator:gadaeca4f9381ece1a7d23bb4a7a3ea7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bb2748e02ed4ec2fe11f3525f39b10e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subscribe.html#ga2bb2748e02ed4ec2fe11f3525f39b10e">cc_mqtt5_client_subscribe_set_response_timeout</a> (<a class="el" href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">CC_Mqtt5SubscribeHandle</a> handle, unsigned ms)</td></tr>
@@ -138,14 +138,14 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gaf896acf9ea4e80d7bf8c91dbc0cdda97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf896acf9ea4e80d7bf8c91dbc0cdda97">&#9670;&nbsp;</a></span>CC_Mqtt5SubscribeCompleteCb</h2>
+<a id="ga6e830ba5fe0ac04d19c72acc7a9eab26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e830ba5fe0ac04d19c72acc7a9eab26">&#9670;&nbsp;</a></span>CC_Mqtt5SubscribeCompleteCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_Mqtt5SubscribeCompleteCb) (void *data, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5SubscribeResponse.html">CC_Mqtt5SubscribeResponse</a> *response)</td>
+          <td class="memname">typedef void(* CC_Mqtt5SubscribeCompleteCb) (void *data, <a class="el" href="group__subscribe.html#ga6fbdce35052d6cbd1cb0e5e3995b4ccd">CC_Mqtt5SubscribeHandle</a> handle, <a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt5SubscribeResponse.html">CC_Mqtt5SubscribeResponse</a> *response)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -154,6 +154,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to user data object passed as last parameter to the <b><a class="el" href="group__subscribe.html#gadaeca4f9381ece1a7d23bb4a7a3ea7c8" title="Send the configured &quot;subscribe&quot; operation to broker.">cc_mqtt5_client_subscribe_send()</a></b>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <b><a class="el" href="group__subscribe.html#ga1cbf32eb3f9d11ae96e50d9570deb403" title="Prepare &quot;subscribe&quot; operation.">cc_mqtt5_client_subscribe_prepare()</a></b> function. When the callback is invoked the handle is already invalid and cannot be used in any relevant function invocation, but it allows end application to identify the original "subscribe" operation and use the same callback function in parallel requests. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>Status of the "subscribe" operation. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>Response information from the broker. Not-NULL is reported <b>if and onfly if</b> the "status" is equal to <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da1612bd223303ddf181264c196d24855d">CC_Mqtt5AsyncOpStatus_Complete</a>. </td></tr>
   </table>
@@ -485,7 +486,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__subscribe.html#gaf896acf9ea4e80d7bf8c91dbc0cdda97">CC_Mqtt5SubscribeCompleteCb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__subscribe.html#ga6e830ba5fe0ac04d19c72acc7a9eab26">CC_Mqtt5SubscribeCompleteCb</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>

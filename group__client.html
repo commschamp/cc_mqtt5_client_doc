@@ -127,7 +127,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga726e9de1b87f3bdb3c86679f48b22569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report network disconnected status.  <a href="group__client.html#ga726e9de1b87f3bdb3c86679f48b22569">More...</a><br /></td></tr>
 <tr class="separator:ga726e9de1b87f3bdb3c86679f48b22569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#gad3b930c68cc7fd7b9c512bb41f7a974a">cc_mqtt5_client_process_data</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const unsigned char *buf, unsigned bufLen)</td></tr>
-<tr class="memdesc:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide data, received over I/O link, to the library for processing.  <a href="group__client.html#gad3b930c68cc7fd7b9c512bb41f7a974a">More...</a><br /></td></tr>
+<tr class="memdesc:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide data (received over I/O link), to the library for processing.  <a href="group__client.html#gad3b930c68cc7fd7b9c512bb41f7a974a">More...</a><br /></td></tr>
 <tr class="separator:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55fb642a0c5e30087037a98d5bd38be6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga55fb642a0c5e30087037a98d5bd38be6">cc_mqtt5_client_pub_topic_alias_alloc</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const char *topic, unsigned char qos0RegsCount)</td></tr>
 <tr class="memdesc:ga55fb642a0c5e30087037a98d5bd38be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate alias for topic.  <a href="group__client.html#ga55fb642a0c5e30087037a98d5bd38be6">More...</a><br /></td></tr>
@@ -306,7 +306,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Callback used to request to send data to the broker. </p>
-<p>The callback is set using <a class="el" href="client_8h.html#a2b4c31e4c1b1fadf587ee2e727d595d2" title="Set callback to send raw data over I/O link.">cc_mqtt5_client_set_send_output_data_callback()</a> function. The reported data resides in internal data structures of the client library, and it can be updated right after the callback function returns. It means the data may need to be copied into some other buffer which will be held intact until the send over I/O link operation is complete. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback is set using <a class="el" href="client_8h.html#a2b4c31e4c1b1fadf587ee2e727d595d2" title="Set callback to send raw data over I/O link.">cc_mqtt5_client_set_send_output_data_callback()</a> function. The reported data resides in internal data structures of the client library, which can be updated / deleted right after the callback function returns. It means the data may need to be copied into some other buffer which will be held intact until the send over I/O link operation is complete. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to user data object, passed as last parameter to <a class="el" href="client_8h.html#a2b4c31e4c1b1fadf587ee2e727d595d2" title="Set callback to send raw data over I/O link.">cc_mqtt5_client_set_send_output_data_callback()</a> function. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Pointer to the buffer containing data to send </td></tr>
@@ -626,7 +626,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Provide data, received over I/O link, to the library for processing. </p>
+<p>Provide data (received over I/O link), to the library for processing. </p>
 <p>This call may cause invocation of some callbacks, such as request to cancel the currently running time measurement, send some messages to the broker, report incoming application message, and (re)start time measurement. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>

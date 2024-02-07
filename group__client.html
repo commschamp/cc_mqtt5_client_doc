@@ -129,9 +129,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#gad3b930c68cc7fd7b9c512bb41f7a974a">cc_mqtt5_client_process_data</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const unsigned char *buf, unsigned bufLen)</td></tr>
 <tr class="memdesc:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide data (received over I/O link), to the library for processing.  <a href="group__client.html#gad3b930c68cc7fd7b9c512bb41f7a974a">More...</a><br /></td></tr>
 <tr class="separator:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55fb642a0c5e30087037a98d5bd38be6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga55fb642a0c5e30087037a98d5bd38be6">cc_mqtt5_client_pub_topic_alias_alloc</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const char *topic, unsigned char qos0RegsCount)</td></tr>
-<tr class="memdesc:ga55fb642a0c5e30087037a98d5bd38be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate alias for topic.  <a href="group__client.html#ga55fb642a0c5e30087037a98d5bd38be6">More...</a><br /></td></tr>
-<tr class="separator:ga55fb642a0c5e30087037a98d5bd38be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c2fe1f32a4c01246cf180a42689a4b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga4c2fe1f32a4c01246cf180a42689a4b3">cc_mqtt5_client_pub_topic_alias_alloc</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const char *topic, unsigned qos0RegsCount)</td></tr>
+<tr class="memdesc:ga4c2fe1f32a4c01246cf180a42689a4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate alias for topic.  <a href="group__client.html#ga4c2fe1f32a4c01246cf180a42689a4b3">More...</a><br /></td></tr>
+<tr class="separator:ga4c2fe1f32a4c01246cf180a42689a4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3854000b63deee7d20b3e6e2297d2ed1"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga3854000b63deee7d20b3e6e2297d2ed1">cc_mqtt5_client_pub_topic_alias_count</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
 <tr class="memdesc:ga3854000b63deee7d20b3e6e2297d2ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get amount of allocated topic aliases.  <a href="group__client.html#ga3854000b63deee7d20b3e6e2297d2ed1">More...</a><br /></td></tr>
 <tr class="separator:ga3854000b63deee7d20b3e6e2297d2ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -640,8 +640,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga55fb642a0c5e30087037a98d5bd38be6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55fb642a0c5e30087037a98d5bd38be6">&#9670;&nbsp;</a></span>cc_mqtt5_client_pub_topic_alias_alloc()</h2>
+<a id="ga4c2fe1f32a4c01246cf180a42689a4b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c2fe1f32a4c01246cf180a42689a4b3">&#9670;&nbsp;</a></span>cc_mqtt5_client_pub_topic_alias_alloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,7 +661,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>qos0RegsCount</em>&#160;</td>
         </tr>
         <tr>
@@ -677,7 +677,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">topic</td><td>Topic string for which the alias needs to be allocated. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">qos0RegsCount</td><td>Amount of times to report topic alias to the broker when QoS0 messages are used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos0RegsCount</td><td>Amount of times to report topic alias to the broker when QoS0 messages are used, mustn't be greather than 255. </td></tr>
   </table>
   </dd>
 </dl>

@@ -72,7 +72,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga84becfb57b38d64046e33a931129ed60"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga84becfb57b38d64046e33a931129ed60">CC_Mqtt5BrokerDisconnectReportCb</a>) (void *data, const CC_Mqtt5DisconnectInfo *info)</td></tr>
+<tr class="memitem:ga84becfb57b38d64046e33a931129ed60"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga84becfb57b38d64046e33a931129ed60">CC_Mqtt5BrokerDisconnectReportCb</a>) (void *data, const <a class="el" href="structCC__Mqtt5DisconnectInfo.html">CC_Mqtt5DisconnectInfo</a> *info)</td></tr>
 <tr class="memdesc:ga84becfb57b38d64046e33a931129ed60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report unsolicited disconnection of the broker.  <a href="group__client.html#ga84becfb57b38d64046e33a931129ed60">More...</a><br /></td></tr>
 <tr class="separator:ga84becfb57b38d64046e33a931129ed60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada43a479edab17c2994410985a80678c"><td class="memItemLeft" align="right" valign="top">typedef unsigned(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#gada43a479edab17c2994410985a80678c">CC_Mqtt5CancelNextTickWaitCb</a>) (void *data)</td></tr>
@@ -114,18 +114,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga58897f8539e72671602cc3fc8e9ac19f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga58897f8539e72671602cc3fc8e9ac19f">cc_mqtt5_client_get_verify_outgoing_topic_enabled</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
 <tr class="memdesc:ga58897f8539e72671602cc3fc8e9ac19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve current outgoing topic format verification control.  <a href="group__client.html#ga58897f8539e72671602cc3fc8e9ac19f">More...</a><br /></td></tr>
 <tr class="separator:ga58897f8539e72671602cc3fc8e9ac19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae16f1dae966b8bb63ba38e10bd35df38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#gae16f1dae966b8bb63ba38e10bd35df38">cc_mqtt5_client_init</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
-<tr class="memdesc:gae16f1dae966b8bb63ba38e10bd35df38"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Re)Initialize client.  <a href="group__client.html#gae16f1dae966b8bb63ba38e10bd35df38">More...</a><br /></td></tr>
-<tr class="separator:gae16f1dae966b8bb63ba38e10bd35df38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18790eaf31c039cdc0ac638a4ecf674a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga18790eaf31c039cdc0ac638a4ecf674a">cc_mqtt5_client_is_initialized</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
-<tr class="memdesc:ga18790eaf31c039cdc0ac638a4ecf674a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the client has been (re)initialized.  <a href="group__client.html#ga18790eaf31c039cdc0ac638a4ecf674a">More...</a><br /></td></tr>
-<tr class="separator:ga18790eaf31c039cdc0ac638a4ecf674a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80f86aebc763629d3994b6445dd2042c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga80f86aebc763629d3994b6445dd2042c">cc_mqtt5_client_is_network_disconnected</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
 <tr class="memdesc:ga80f86aebc763629d3994b6445dd2042c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check current network disconnected status.  <a href="group__client.html#ga80f86aebc763629d3994b6445dd2042c">More...</a><br /></td></tr>
 <tr class="separator:ga80f86aebc763629d3994b6445dd2042c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga726e9de1b87f3bdb3c86679f48b22569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga726e9de1b87f3bdb3c86679f48b22569">cc_mqtt5_client_notify_network_disconnected</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, bool disconnected)</td></tr>
-<tr class="memdesc:ga726e9de1b87f3bdb3c86679f48b22569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report network disconnected status.  <a href="group__client.html#ga726e9de1b87f3bdb3c86679f48b22569">More...</a><br /></td></tr>
-<tr class="separator:ga726e9de1b87f3bdb3c86679f48b22569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f6b65e1f720e18b00d8ca1bf63002a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga0f6b65e1f720e18b00d8ca1bf63002a9">cc_mqtt5_client_notify_network_disconnected</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
+<tr class="memdesc:ga0f6b65e1f720e18b00d8ca1bf63002a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report network disconnected.  <a href="group__client.html#ga0f6b65e1f720e18b00d8ca1bf63002a9">More...</a><br /></td></tr>
+<tr class="separator:ga0f6b65e1f720e18b00d8ca1bf63002a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#gad3b930c68cc7fd7b9c512bb41f7a974a">cc_mqtt5_client_process_data</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const unsigned char *buf, unsigned bufLen)</td></tr>
 <tr class="memdesc:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide data (received over I/O link), to the library for processing.  <a href="group__client.html#gad3b930c68cc7fd7b9c512bb41f7a974a">More...</a><br /></td></tr>
 <tr class="separator:gad3b930c68cc7fd7b9c512bb41f7a974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,13 +160,13 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_Mqtt5BrokerDisconnectReportCb) (void *data, const CC_Mqtt5DisconnectInfo *info)</td>
+          <td class="memname">typedef void(* CC_Mqtt5BrokerDisconnectReportCb) (void *data, const <a class="el" href="structCC__Mqtt5DisconnectInfo.html">CC_Mqtt5DisconnectInfo</a> *info)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Callback used to report unsolicited disconnection of the broker. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>When invoked the "info" is present <b>if and only if</b> the broker disconnection report is due to the reception of the <b>DISCONNECT</b> message from the broker. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to user data object, passed as the last parameter to the request call. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>Extra disconnect information when reported by the broker. Can be NULL. </td></tr>
@@ -475,60 +469,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae16f1dae966b8bb63ba38e10bd35df38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae16f1dae966b8bb63ba38e10bd35df38">&#9670;&nbsp;</a></span>cc_mqtt5_client_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(Re)Initialize client. </p>
-<p>Re-initializes all internal data structures into their default variables and checks that all the required callbacks have been set. If there are old outstanding operations they are all aborted. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>Mustn't be called from within a callback, use next event loop iteration. </dd></dl>
-
-</div>
-</div>
-<a id="ga18790eaf31c039cdc0ac638a4ecf674a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga18790eaf31c039cdc0ac638a4ecf674a">&#9670;&nbsp;</a></span>cc_mqtt5_client_is_initialized()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cc_mqtt5_client_is_initialized </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check that the client has been (re)initialized. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><b>true</b> if <a class="el" href="group__client.html#gae16f1dae966b8bb63ba38e10bd35df38" title="(Re)Initialize client.">cc_mqtt5_client_init()</a> has been invoked before, <b>false</b> otherwise. </dd></dl>
-
-</div>
-</div>
 <a id="ga80f86aebc763629d3994b6445dd2042c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga80f86aebc763629d3994b6445dd2042c">&#9670;&nbsp;</a></span>cc_mqtt5_client_is_network_disconnected()</h2>
 
@@ -553,12 +493,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><b>true</b> when disconnected, <b>false</b> when0 connected. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>After invocation of the <a class="el" href="index.html#cc_mqtt5_client_init">Client (Re)Initialization</a>, this function will return <b>false</b>, i.e. after (re)initializaiton network is assumend connected. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>After invocation of the <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a>, this function will return <b>false</b>, i.e. after client allocation network is assumend connected. </dd></dl>
 
 </div>
 </div>
-<a id="ga726e9de1b87f3bdb3c86679f48b22569"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga726e9de1b87f3bdb3c86679f48b22569">&#9670;&nbsp;</a></span>cc_mqtt5_client_notify_network_disconnected()</h2>
+<a id="ga0f6b65e1f720e18b00d8ca1bf63002a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f6b65e1f720e18b00d8ca1bf63002a9">&#9670;&nbsp;</a></span>cc_mqtt5_client_notify_network_disconnected()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,27 +507,16 @@ Functions</h2></td></tr>
           <td class="memname">void cc_mqtt5_client_notify_network_disconnected </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>disconnected</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Report network disconnected status. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Report network disconnected. </p>
+<p>To notify the client that the network is connected again use <a class="el" href="group__connect.html#gac5313c526aa84ded82c0d206ead9683c">cc_mqtt5_client_connect_prepare()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">disconnected</td><td>Flag for network disconnection: <b>true</b> when disconnected, <b>false</b> when (re)connected. </td></tr>
   </table>
   </dd>
 </dl>

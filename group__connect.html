@@ -118,6 +118,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga958c2fbc2dd9d159fe8786a3053e3706"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga958c2fbc2dd9d159fe8786a3053e3706">cc_mqtt5_client_connect_config_will</a> (<a class="el" href="group__connect.html#ga64101c171371a32ee993fcfa0713b69e">CC_Mqtt5ConnectHandle</a> handle, const <a class="el" href="structCC__Mqtt5ConnectWillConfig.html">CC_Mqtt5ConnectWillConfig</a> *config)</td></tr>
 <tr class="memdesc:ga958c2fbc2dd9d159fe8786a3053e3706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform will configuration of the "connect" operation.  <a href="group__connect.html#ga958c2fbc2dd9d159fe8786a3053e3706">More...</a><br /></td></tr>
 <tr class="separator:ga958c2fbc2dd9d159fe8786a3053e3706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga611c5f01ffcbd8b140e4360bdcd9838d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga611c5f01ffcbd8b140e4360bdcd9838d">cc_mqtt5_client_connect_full</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt5ConnectBasicConfig.html">CC_Mqtt5ConnectBasicConfig</a> *basicConfig, const <a class="el" href="structCC__Mqtt5ConnectWillConfig.html">CC_Mqtt5ConnectWillConfig</a> *willConfig, const <a class="el" href="structCC__Mqtt5ConnectExtraConfig.html">CC_Mqtt5ConnectExtraConfig</a> *extraConfig, const <a class="el" href="structCC__Mqtt5AuthConfig.html">CC_Mqtt5AuthConfig</a> *authConfig, <a class="el" href="group__connect.html#ga487f738d4045ede25cbca63ee567780d">CC_Mqtt5ConnectCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memdesc:ga611c5f01ffcbd8b140e4360bdcd9838d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare, configure, and send "connect" request in one go (full version)  <a href="group__connect.html#ga611c5f01ffcbd8b140e4360bdcd9838d">More...</a><br /></td></tr>
+<tr class="separator:ga611c5f01ffcbd8b140e4360bdcd9838d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga834ff2ca7a48639017b02b1cd7c49836"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga834ff2ca7a48639017b02b1cd7c49836">cc_mqtt5_client_connect_get_response_timeout</a> (<a class="el" href="group__connect.html#ga64101c171371a32ee993fcfa0713b69e">CC_Mqtt5ConnectHandle</a> handle)</td></tr>
 <tr class="memdesc:ga834ff2ca7a48639017b02b1cd7c49836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the configured the broker response timeout for the "connect" operation.  <a href="group__connect.html#ga834ff2ca7a48639017b02b1cd7c49836">More...</a><br /></td></tr>
 <tr class="separator:ga834ff2ca7a48639017b02b1cd7c49836"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaccd7f9371b91bdee6f7b4bbe9a4ec105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#gaccd7f9371b91bdee6f7b4bbe9a4ec105">cc_mqtt5_client_connect_set_response_timeout</a> (<a class="el" href="group__connect.html#ga64101c171371a32ee993fcfa0713b69e">CC_Mqtt5ConnectHandle</a> handle, unsigned ms)</td></tr>
 <tr class="memdesc:gaccd7f9371b91bdee6f7b4bbe9a4ec105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the broker response timeout for the "connect" operation.  <a href="group__connect.html#gaccd7f9371b91bdee6f7b4bbe9a4ec105">More...</a><br /></td></tr>
 <tr class="separator:gaccd7f9371b91bdee6f7b4bbe9a4ec105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81d819f144eacecf6f6ab7f7ce7bfa1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga81d819f144eacecf6f6ab7f7ce7bfa1f">cc_mqtt5_client_connect_simple</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt5ConnectBasicConfig.html">CC_Mqtt5ConnectBasicConfig</a> *basicConfig, <a class="el" href="group__connect.html#ga487f738d4045ede25cbca63ee567780d">CC_Mqtt5ConnectCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memdesc:ga81d819f144eacecf6f6ab7f7ce7bfa1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare, configure, and send "connect" request in one go (simple version)  <a href="group__connect.html#ga81d819f144eacecf6f6ab7f7ce7bfa1f">More...</a><br /></td></tr>
+<tr class="separator:ga81d819f144eacecf6f6ab7f7ce7bfa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga83bc38c4588aac4d6d77bb53d1bc6f4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga83bc38c4588aac4d6d77bb53d1bc6f4c">cc_mqtt5_client_is_connected</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
 <tr class="memdesc:ga83bc38c4588aac4d6d77bb53d1bc6f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the inner state of the library of whether it's connected to the broker.  <a href="group__connect.html#ga83bc38c4588aac4d6d77bb53d1bc6f4c">More...</a><br /></td></tr>
 <tr class="separator:ga83bc38c4588aac4d6d77bb53d1bc6f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -458,6 +464,87 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga611c5f01ffcbd8b140e4360bdcd9838d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga611c5f01ffcbd8b140e4360bdcd9838d">&#9670;&nbsp;</a></span>cc_mqtt5_client_connect_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_connect_full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5ConnectBasicConfig.html">CC_Mqtt5ConnectBasicConfig</a> *&#160;</td>
+          <td class="paramname"><em>basicConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5ConnectWillConfig.html">CC_Mqtt5ConnectWillConfig</a> *&#160;</td>
+          <td class="paramname"><em>willConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5ConnectExtraConfig.html">CC_Mqtt5ConnectExtraConfig</a> *&#160;</td>
+          <td class="paramname"><em>extraConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5AuthConfig.html">CC_Mqtt5AuthConfig</a> *&#160;</td>
+          <td class="paramname"><em>authConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__connect.html#ga487f738d4045ede25cbca63ee567780d">CC_Mqtt5ConnectCompleteCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cbData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare, configure, and send "connect" request in one go (full version) </p>
+<p>Abstracts away sequence of the following functions invocation: </p><ul>
+<li><a class="el" href="group__connect.html#gac5313c526aa84ded82c0d206ead9683c">cc_mqtt5_client_connect_prepare()</a> </li>
+<li><a class="el" href="group__connect.html#gaf2a947ad8801a6d2cc3b0d68981b5308">cc_mqtt5_client_connect_config_basic()</a> </li>
+<li><a class="el" href="group__connect.html#ga958c2fbc2dd9d159fe8786a3053e3706">cc_mqtt5_client_connect_config_will()</a> </li>
+<li><a class="el" href="group__connect.html#ga0250a9dc06f6637b836badddc3723935">cc_mqtt5_client_connect_config_extra()</a> </li>
+<li><a class="el" href="group__connect.html#ga7fd264379469afc148b33e03733a062b">cc_mqtt5_client_connect_config_auth()</a> </li>
+<li><a class="el" href="group__connect.html#gab07a79afeddf50c2c0e8c442bf3c14e3">cc_mqtt5_client_connect_send()</a></li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">basicConfig</td><td>Basic configuration. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">willConfig</td><td>Will configuration. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extraConfig</td><td>Extra configuration. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">authConfig</td><td>Auth configuration. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to be invoked when "connect" operation is complete. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cbData</td><td>Pointer to any user data structure. It will passed as one of the parameters in callback invocation. May be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
+
+</div>
+</div>
 <a id="ga834ff2ca7a48639017b02b1cd7c49836"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga834ff2ca7a48639017b02b1cd7c49836">&#9670;&nbsp;</a></span>cc_mqtt5_client_connect_get_response_timeout()</h2>
 
@@ -642,7 +729,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prepare "connect" operation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>For successful operation the client needs to be in the "disconnected" state and there are no other incomplete "connect" operation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ec</td><td>Error code reporting result of the operation. Can be NULL. </td></tr>
@@ -650,8 +737,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Handle of the "connect" operation, will be NULL in case of failure. To analyze the reason failure use "ec" output parameter. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>There were no other prepared or complete "connect" operation since last invocation of <a class="el" href="group__client.html#gae16f1dae966b8bb63ba38e10bd35df38">cc_mqtt5_client_init()</a>. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>The "connect" operation is allocated, use either <a class="el" href="group__connect.html#gab07a79afeddf50c2c0e8c442bf3c14e3">cc_mqtt5_client_connect_send()</a> or <a class="el" href="group__connect.html#ga3a86f0f55eca32b031c931e211077856">cc_mqtt5_client_connect_cancel()</a> to prevent memory leaks. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>The function can NOT be called from within a callback, use next event iteration. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>The network assumed to be in the "connected" state, use <a class="el" href="group__client.html#ga80f86aebc763629d3994b6445dd2042c">cc_mqtt5_client_is_network_disconnected()</a> to notify about the network disconnection. </dd>
+<dd>
+The "connect" operation is allocated, use either <a class="el" href="group__connect.html#gab07a79afeddf50c2c0e8c442bf3c14e3">cc_mqtt5_client_connect_send()</a> or <a class="el" href="group__connect.html#ga3a86f0f55eca32b031c931e211077856">cc_mqtt5_client_connect_cancel()</a> to prevent memory leaks. </dd></dl>
 
 </div>
 </div>
@@ -734,6 +823,63 @@ The provided callback will be invoked when the "connect" operation is complete <
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__connect.html#gac5313c526aa84ded82c0d206ead9683c">cc_mqtt5_client_connect_prepare()</a> function. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>Response timeout duration in <b>milliseconds</b>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
+
+</div>
+</div>
+<a id="ga81d819f144eacecf6f6ab7f7ce7bfa1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81d819f144eacecf6f6ab7f7ce7bfa1f">&#9670;&nbsp;</a></span>cc_mqtt5_client_connect_simple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_connect_simple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5ConnectBasicConfig.html">CC_Mqtt5ConnectBasicConfig</a> *&#160;</td>
+          <td class="paramname"><em>basicConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__connect.html#ga487f738d4045ede25cbca63ee567780d">CC_Mqtt5ConnectCompleteCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cbData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare, configure, and send "connect" request in one go (simple version) </p>
+<p>Abstracts away sequence of the following functions invocation: </p><ul>
+<li><a class="el" href="group__connect.html#gac5313c526aa84ded82c0d206ead9683c">cc_mqtt5_client_connect_prepare()</a> </li>
+<li><a class="el" href="group__connect.html#gaf2a947ad8801a6d2cc3b0d68981b5308">cc_mqtt5_client_connect_config_basic()</a> </li>
+<li><a class="el" href="group__connect.html#gab07a79afeddf50c2c0e8c442bf3c14e3">cc_mqtt5_client_connect_send()</a></li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">basicConfig</td><td>Basic configuration. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to be invoked when "connect" operation is complete. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cbData</td><td>Pointer to any user data structure. It will passed as one of the parameters in callback invocation. May be NULL. </td></tr>
   </table>
   </dd>
 </dl>

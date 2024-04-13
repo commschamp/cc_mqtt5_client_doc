@@ -85,6 +85,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaea508d1a93d25ff57b3d03e843f2ba7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__disconnect.html#gaea508d1a93d25ff57b3d03e843f2ba7b">cc_mqtt5_client_disconnect</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt5DisconnectConfig.html">CC_Mqtt5DisconnectConfig</a> *config)</td></tr>
+<tr class="memdesc:gaea508d1a93d25ff57b3d03e843f2ba7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare, configure, and send "disconnect" request in one go.  <a href="group__disconnect.html#gaea508d1a93d25ff57b3d03e843f2ba7b">More...</a><br /></td></tr>
+<tr class="separator:gaea508d1a93d25ff57b3d03e843f2ba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21fa077f13b88908dadc016daa5b941f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__disconnect.html#ga21fa077f13b88908dadc016daa5b941f">cc_mqtt5_client_disconnect_add_user_prop</a> (<a class="el" href="group__disconnect.html#ga92b8550723ef32e1f15578b428cab05d">CC_Mqtt5DisconnectHandle</a> handle, const <a class="el" href="structCC__Mqtt5UserProp.html">CC_Mqtt5UserProp</a> *prop)</td></tr>
 <tr class="memdesc:ga21fa077f13b88908dadc016daa5b941f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add user property to the configuration of the "disconnect" operation.  <a href="group__disconnect.html#ga21fa077f13b88908dadc016daa5b941f">More...</a><br /></td></tr>
 <tr class="separator:ga21fa077f13b88908dadc016daa5b941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +127,49 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gaea508d1a93d25ff57b3d03e843f2ba7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea508d1a93d25ff57b3d03e843f2ba7b">&#9670;&nbsp;</a></span>cc_mqtt5_client_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5DisconnectConfig.html">CC_Mqtt5DisconnectConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare, configure, and send "disconnect" request in one go. </p>
+<p>Abstracts away sequence of the following functions invocation: </p><ul>
+<li><a class="el" href="group__disconnect.html#ga6a5de1f9260e525c1b21d755bdd0c8c8">cc_mqtt5_client_disconnect_prepare()</a> </li>
+<li><a class="el" href="group__disconnect.html#gad45d98e9ff983aa7e80353738f2a6df8">cc_mqtt5_client_disconnect_config()</a> </li>
+<li><a class="el" href="group__disconnect.html#ga69e8c99ae3299cd3b51eeb4ffae41925">cc_mqtt5_client_disconnect_send()</a></li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration. Can be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
+
+</div>
+</div>
 <a id="ga21fa077f13b88908dadc016daa5b941f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga21fa077f13b88908dadc016daa5b941f">&#9670;&nbsp;</a></span>cc_mqtt5_client_disconnect_add_user_prop()</h2>
 
@@ -283,7 +329,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prepare "disconnect" operation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>For successful operation the client needs to be in the "connected" state and there were no other prepared or complete "disconnect" operation since last "connect" operation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ec</td><td>Error code reporting result of the operation. Can be NULL. </td></tr>
@@ -291,7 +337,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Handle of the "disconnect" operation, will be NULL in case of failure. To analyze the reason failure use "ec" output parameter. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>There were no other prepared or complete "disconnect" operation since last "connect" operation. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>The "disconnect" operation is allocated, use either <a class="el" href="group__disconnect.html#ga69e8c99ae3299cd3b51eeb4ffae41925">cc_mqtt5_client_disconnect_send()</a> or <a class="el" href="group__disconnect.html#ga6e99be30da8691287e769ba1135850d5">cc_mqtt5_client_disconnect_cancel()</a> to prevent memory leaks. </dd></dl>
 
 </div>

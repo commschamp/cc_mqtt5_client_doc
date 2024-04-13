@@ -121,6 +121,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaae32b8550c3448c54d7fb373ba2214ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#gaae32b8550c3448c54d7fb373ba2214ac">cc_mqtt5_client_publish_config_extra</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle, const <a class="el" href="structCC__Mqtt5PublishExtraConfig.html">CC_Mqtt5PublishExtraConfig</a> *config)</td></tr>
 <tr class="memdesc:gaae32b8550c3448c54d7fb373ba2214ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform extra properties configuration of the "publish" operation.  <a href="group__publish.html#gaae32b8550c3448c54d7fb373ba2214ac">More...</a><br /></td></tr>
 <tr class="separator:gaae32b8550c3448c54d7fb373ba2214ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8db7a1a3d48471f8af354ca64dd5d6e9"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#ga8db7a1a3d48471f8af354ca64dd5d6e9">cc_mqtt5_client_publish_count</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle)</td></tr>
+<tr class="memdesc:ga8db7a1a3d48471f8af354ca64dd5d6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get amount incomplete "publish" operations.  <a href="group__publish.html#ga8db7a1a3d48471f8af354ca64dd5d6e9">More...</a><br /></td></tr>
+<tr class="separator:ga8db7a1a3d48471f8af354ca64dd5d6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f05f5d3b412ce6bd4fa724afecbee4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#ga3f05f5d3b412ce6bd4fa724afecbee4e">cc_mqtt5_client_publish_full</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt5PublishBasicConfig.html">CC_Mqtt5PublishBasicConfig</a> *basicConfig, const <a class="el" href="structCC__Mqtt5PublishExtraConfig.html">CC_Mqtt5PublishExtraConfig</a> *extraConfig, <a class="el" href="group__publish.html#ga7911ab79b27c77d887fb2fd491ab5c42">CC_Mqtt5PublishCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memdesc:ga3f05f5d3b412ce6bd4fa724afecbee4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare, configure, and send "publish" request in one go (full version)  <a href="group__publish.html#ga3f05f5d3b412ce6bd4fa724afecbee4e">More...</a><br /></td></tr>
+<tr class="separator:ga3f05f5d3b412ce6bd4fa724afecbee4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e0c485c1757b272eeb665644a00e3f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#ga1e0c485c1757b272eeb665644a00e3f1">cc_mqtt5_client_publish_get_out_of_order_allowed</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle)</td></tr>
+<tr class="memdesc:ga1e0c485c1757b272eeb665644a00e3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current configuration whether the sending the <b>PUBLISH</b> message out of order is allowed.  <a href="group__publish.html#ga1e0c485c1757b272eeb665644a00e3f1">More...</a><br /></td></tr>
+<tr class="separator:ga1e0c485c1757b272eeb665644a00e3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4cd4b0346ab8c622bc962b1a2f6386e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#gac4cd4b0346ab8c622bc962b1a2f6386e">cc_mqtt5_client_publish_get_resend_attempts</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle)</td></tr>
 <tr class="memdesc:gac4cd4b0346ab8c622bc962b1a2f6386e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the configured the amount of resend attempts for the "publish" operation.  <a href="group__publish.html#gac4cd4b0346ab8c622bc962b1a2f6386e">More...</a><br /></td></tr>
 <tr class="separator:gac4cd4b0346ab8c622bc962b1a2f6386e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,12 +148,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf19c2d2953ee67a413877681fcf8fcc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#gaf19c2d2953ee67a413877681fcf8fcc9">cc_mqtt5_client_publish_send</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle, <a class="el" href="group__publish.html#ga7911ab79b27c77d887fb2fd491ab5c42">CC_Mqtt5PublishCompleteCb</a> cb, void *cbData)</td></tr>
 <tr class="memdesc:gaf19c2d2953ee67a413877681fcf8fcc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the configured "publish" operation to broker.  <a href="group__publish.html#gaf19c2d2953ee67a413877681fcf8fcc9">More...</a><br /></td></tr>
 <tr class="separator:gaf19c2d2953ee67a413877681fcf8fcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89b9db26de737fa9ddd7a0ad002765cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#ga89b9db26de737fa9ddd7a0ad002765cd">cc_mqtt5_client_publish_set_out_of_order_allowed</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle, bool allowed)</td></tr>
+<tr class="memdesc:ga89b9db26de737fa9ddd7a0ad002765cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure whether sending the prepared <b>PUBLISH</b> message can be sent out-of-order.  <a href="group__publish.html#ga89b9db26de737fa9ddd7a0ad002765cd">More...</a><br /></td></tr>
+<tr class="separator:ga89b9db26de737fa9ddd7a0ad002765cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8e04a144f923f3e5829c3522b1f22ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#gae8e04a144f923f3e5829c3522b1f22ba">cc_mqtt5_client_publish_set_resend_attempts</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle, unsigned attempts)</td></tr>
 <tr class="memdesc:gae8e04a144f923f3e5829c3522b1f22ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the amount of attempts to resend "publish" operation until the acknowledgement is received.  <a href="group__publish.html#gae8e04a144f923f3e5829c3522b1f22ba">More...</a><br /></td></tr>
 <tr class="separator:gae8e04a144f923f3e5829c3522b1f22ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d1bfed81a79f8460f6cc679bdd157cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#ga8d1bfed81a79f8460f6cc679bdd157cd">cc_mqtt5_client_publish_set_response_timeout</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle, unsigned ms)</td></tr>
 <tr class="memdesc:ga8d1bfed81a79f8460f6cc679bdd157cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the broker response timeout for the "publish" operation.  <a href="group__publish.html#ga8d1bfed81a79f8460f6cc679bdd157cd">More...</a><br /></td></tr>
 <tr class="separator:ga8d1bfed81a79f8460f6cc679bdd157cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4dec892b420aa6bc0a036986c81e9d4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#ga4dec892b420aa6bc0a036986c81e9d4c">cc_mqtt5_client_publish_simple</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt5PublishBasicConfig.html">CC_Mqtt5PublishBasicConfig</a> *basicConfig, <a class="el" href="group__publish.html#ga7911ab79b27c77d887fb2fd491ab5c42">CC_Mqtt5PublishCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memdesc:ga4dec892b420aa6bc0a036986c81e9d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare, configure, and send "publish" request in one go (simple version)  <a href="group__publish.html#ga4dec892b420aa6bc0a036986c81e9d4c">More...</a><br /></td></tr>
+<tr class="separator:ga4dec892b420aa6bc0a036986c81e9d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeec796c480e4d7b8384aca93cf0396cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__publish.html#gaeec796c480e4d7b8384aca93cf0396cb">cc_mqtt5_client_publish_was_initiated</a> (<a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a> handle)</td></tr>
+<tr class="memdesc:gaeec796c480e4d7b8384aca93cf0396cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the "publish" operation was actually initiated (PUBLISH was sent)  <a href="group__publish.html#gaeec796c480e4d7b8384aca93cf0396cb">More...</a><br /></td></tr>
+<tr class="separator:gaeec796c480e4d7b8384aca93cf0396cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -367,6 +385,125 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8db7a1a3d48471f8af354ca64dd5d6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8db7a1a3d48471f8af354ca64dd5d6e9">&#9670;&nbsp;</a></span>cc_mqtt5_client_publish_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned cc_mqtt5_client_publish_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get amount incomplete "publish" operations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Amount of publish operations that have been prepared before, and are still incomplete. </dd></dl>
+
+</div>
+</div>
+<a id="ga3f05f5d3b412ce6bd4fa724afecbee4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f05f5d3b412ce6bd4fa724afecbee4e">&#9670;&nbsp;</a></span>cc_mqtt5_client_publish_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_publish_full </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5PublishBasicConfig.html">CC_Mqtt5PublishBasicConfig</a> *&#160;</td>
+          <td class="paramname"><em>basicConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5PublishExtraConfig.html">CC_Mqtt5PublishExtraConfig</a> *&#160;</td>
+          <td class="paramname"><em>extraConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__publish.html#ga7911ab79b27c77d887fb2fd491ab5c42">CC_Mqtt5PublishCompleteCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cbData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare, configure, and send "publish" request in one go (full version) </p>
+<p>Abstracts away sequence of the following functions invocation: </p><ul>
+<li><a class="el" href="group__publish.html#ga8ba52035a9ea815cbc65592d93bfc1cf">cc_mqtt5_client_publish_prepare()</a> </li>
+<li><a class="el" href="group__publish.html#ga26d76d06ea71b80772de903d0418ec15">cc_mqtt5_client_publish_config_basic()</a> </li>
+<li><a class="el" href="group__publish.html#gaae32b8550c3448c54d7fb373ba2214ac">cc_mqtt5_client_publish_config_extra()</a> </li>
+<li><a class="el" href="group__publish.html#gaf19c2d2953ee67a413877681fcf8fcc9">cc_mqtt5_client_publish_send()</a></li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">basicConfig</td><td>Basic configuration. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extraConfig</td><td>Extra configuration. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to be invoked when "publish" operation is complete. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cbData</td><td>Pointer to any user data structure. It will passed as one of the parameters in callback invocation. May be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
+
+</div>
+</div>
+<a id="ga1e0c485c1757b272eeb665644a00e3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e0c485c1757b272eeb665644a00e3f1">&#9670;&nbsp;</a></span>cc_mqtt5_client_publish_get_out_of_order_allowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cc_mqtt5_client_publish_get_out_of_order_allowed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current configuration whether the sending the <b>PUBLISH</b> message out of order is allowed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__publish.html#ga8ba52035a9ea815cbc65592d93bfc1cf">cc_mqtt5_client_publish_prepare()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>true</b> in case out of order send is allowed, <b>false</b> otherwise </dd></dl>
+
+</div>
+</div>
 <a id="gac4cd4b0346ab8c622bc962b1a2f6386e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac4cd4b0346ab8c622bc962b1a2f6386e">&#9670;&nbsp;</a></span>cc_mqtt5_client_publish_get_resend_attempts()</h2>
 
@@ -500,7 +637,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prepare "publish" operation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>For successful operation the client needs to be in the "connected" state. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ec</td><td>Error code reporting result of the operation. Can be NULL. </td></tr>
@@ -557,6 +694,44 @@ Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd>The handle of the "publish" operation can be discarded. </dd>
 <dd>
 The provided callback will be invoked when the "publish" operation is complete <b> if and only if</b> the function returns <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa8f6454b1f4f259f82322e3b5517a4d63">CC_Mqtt5ErrorCode_Success</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga89b9db26de737fa9ddd7a0ad002765cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89b9db26de737fa9ddd7a0ad002765cd">&#9670;&nbsp;</a></span>cc_mqtt5_client_publish_set_out_of_order_allowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_publish_set_out_of_order_allowed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure whether sending the prepared <b>PUBLISH</b> message can be sent out-of-order. </p>
+<p>Applicable only to the "publish" operations with QoS0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__publish.html#ga8ba52035a9ea815cbc65592d93bfc1cf">cc_mqtt5_client_publish_prepare()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allowed</td><td>Out-of-order allowed value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
 
 </div>
 </div>
@@ -633,6 +808,90 @@ The provided callback will be invoked when the "publish" operation is complete <
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
+
+</div>
+</div>
+<a id="ga4dec892b420aa6bc0a036986c81e9d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4dec892b420aa6bc0a036986c81e9d4c">&#9670;&nbsp;</a></span>cc_mqtt5_client_publish_simple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_publish_simple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5PublishBasicConfig.html">CC_Mqtt5PublishBasicConfig</a> *&#160;</td>
+          <td class="paramname"><em>basicConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__publish.html#ga7911ab79b27c77d887fb2fd491ab5c42">CC_Mqtt5PublishCompleteCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cbData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare, configure, and send "publish" request in one go (simple version) </p>
+<p>Abstracts away sequence of the following functions invocation: </p><ul>
+<li><a class="el" href="group__publish.html#ga8ba52035a9ea815cbc65592d93bfc1cf">cc_mqtt5_client_publish_prepare()</a> </li>
+<li><a class="el" href="group__publish.html#ga26d76d06ea71b80772de903d0418ec15">cc_mqtt5_client_publish_config_basic()</a> </li>
+<li><a class="el" href="group__publish.html#gaf19c2d2953ee67a413877681fcf8fcc9">cc_mqtt5_client_publish_send()</a></li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">basicConfig</td><td>Basic configuration. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to be invoked when "publish" operation is complete. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cbData</td><td>Pointer to any user data structure. It will passed as one of the parameters in callback invocation. May be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
+
+</div>
+</div>
+<a id="gaeec796c480e4d7b8384aca93cf0396cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeec796c480e4d7b8384aca93cf0396cb">&#9670;&nbsp;</a></span>cc_mqtt5_client_publish_was_initiated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cc_mqtt5_client_publish_was_initiated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">CC_Mqtt5PublishHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the "publish" operation was actually initiated (PUBLISH was sent) </p>
+<p>In case the the amount of outgoing publish messages exceeds the "Receive Maximum" limit set by the broker, the requested "publish" operation can be paused. This API call checks whether the <b>PUBLISH</b> message was already sent to the broker. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__publish.html#ga8ba52035a9ea815cbc65592d93bfc1cf">cc_mqtt5_client_publish_prepare()</a> function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>true</b> in case <b>PUBLISH</b> message has already been sent. </dd></dl>
 
 </div>
 </div>

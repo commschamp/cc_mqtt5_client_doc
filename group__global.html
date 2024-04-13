@@ -80,6 +80,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__Mqtt5AuthInfo.html">CC_Mqtt5AuthInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authentication handshake information.  <a href="structCC__Mqtt5AuthInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__Mqtt5DisconnectInfo.html">CC_Mqtt5DisconnectInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broker disconnection information.  <a href="structCC__Mqtt5DisconnectInfo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCC__Mqtt5MessageInfo.html">CC_Mqtt5MessageInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Received message information.  <a href="structCC__Mqtt5MessageInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,11 +101,11 @@ Macros</h2></td></tr>
 <tr class="memdesc:gae44dc5dfbccf359b5c84b62400d61225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to create numeric version as single unsigned number. <br /></td></tr>
 <tr class="separator:gae44dc5dfbccf359b5c84b62400d61225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1725c46b37922b2e321f3b9b6fc58de9"><td class="memItemLeft" align="right" valign="top"><a id="ga1725c46b37922b2e321f3b9b6fc58de9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#ga1725c46b37922b2e321f3b9b6fc58de9">CC_MQTT5_CLIENT_MINOR_VERSION</a>&#160;&#160;&#160;3U</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#ga1725c46b37922b2e321f3b9b6fc58de9">CC_MQTT5_CLIENT_MINOR_VERSION</a>&#160;&#160;&#160;4U</td></tr>
 <tr class="memdesc:ga1725c46b37922b2e321f3b9b6fc58de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minor verion of the library. <br /></td></tr>
 <tr class="separator:ga1725c46b37922b2e321f3b9b6fc58de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga197f1268575d85f3c08c4ee3e8dd1c9a"><td class="memItemLeft" align="right" valign="top"><a id="ga197f1268575d85f3c08c4ee3e8dd1c9a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#ga197f1268575d85f3c08c4ee3e8dd1c9a">CC_MQTT5_CLIENT_PATCH_VERSION</a>&#160;&#160;&#160;1U</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#ga197f1268575d85f3c08c4ee3e8dd1c9a">CC_MQTT5_CLIENT_PATCH_VERSION</a>&#160;&#160;&#160;0U</td></tr>
 <tr class="memdesc:ga197f1268575d85f3c08c4ee3e8dd1c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Patch level of the library. <br /></td></tr>
 <tr class="separator:ga197f1268575d85f3c08c4ee3e8dd1c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga529bb8056e83ffd5fe580b4c48e3f23a"><td class="memItemLeft" align="right" valign="top"><a id="ga529bb8056e83ffd5fe580b4c48e3f23a"></a>
@@ -141,25 +144,27 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:gaa2b0e4ecc24bfd83703e722793a0bca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code returned by the <a class="el" href="common_8h.html#a4763183da0cfbc4c0ec588d2ebf71430">CC_Mqtt5AuthCb</a> callback.  <a href="group__global.html#gaa2b0e4ecc24bfd83703e722793a0bca1">More...</a><br /></td></tr>
 <tr class="separator:gaa2b0e4ecc24bfd83703e722793a0bca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac9c64dc7d5a785e8b22d7faaaf6f9bea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> { <br />
-&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa8f6454b1f4f259f82322e3b5517a4d63">CC_Mqtt5ErrorCode_Success</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaad9fd7a1393b1854100ce3659aec37945">CC_Mqtt5ErrorCode_InternalError</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaac1f19011141f4f86775348beca9c0db4">CC_Mqtt5ErrorCode_NotIntitialized</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaaf0aff404a52da6b771ccf504b778dd43">CC_Mqtt5ErrorCode_Busy</a>
+&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa8f6454b1f4f259f82322e3b5517a4d63">CC_Mqtt5ErrorCode_Success</a> = 0
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaad9fd7a1393b1854100ce3659aec37945">CC_Mqtt5ErrorCode_InternalError</a> = 1
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaac1f19011141f4f86775348beca9c0db4">CC_Mqtt5ErrorCode_NotIntitialized</a> = 2
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaaf0aff404a52da6b771ccf504b778dd43">CC_Mqtt5ErrorCode_Busy</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa57c1dd09781de911c2cfc2d7b7bda725">CC_Mqtt5ErrorCode_NotConnected</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa59cc25768b679e2ee62a615dbb7186d6">CC_Mqtt5ErrorCode_AlreadyConnected</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa8614c000b8e812823b6ccf446eb09c94">CC_Mqtt5ErrorCode_BadParam</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa07556a61b1d42e67b2f3c704d787ac9e">CC_Mqtt5ErrorCode_InsufficientConfig</a>
+&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa57c1dd09781de911c2cfc2d7b7bda725">CC_Mqtt5ErrorCode_NotConnected</a> = 4
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa59cc25768b679e2ee62a615dbb7186d6">CC_Mqtt5ErrorCode_AlreadyConnected</a> = 5
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa8614c000b8e812823b6ccf446eb09c94">CC_Mqtt5ErrorCode_BadParam</a> = 6
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa07556a61b1d42e67b2f3c704d787ac9e">CC_Mqtt5ErrorCode_InsufficientConfig</a> = 7
 , <br />
-&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa4b5e8551359d9bc4daffd7d967f710eb">CC_Mqtt5ErrorCode_OutOfMemory</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaab6fafd05b6bf24bc9aaf17bae80f3cb1">CC_Mqtt5ErrorCode_BufferOverflow</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaab1b9e20d674c9a233e9bc36a1e3f5dfe">CC_Mqtt5ErrorCode_NotSupported</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaaca485d14f9a067504a7ed21f2998747f">CC_Mqtt5ErrorCode_RetryLater</a>
+&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa4b5e8551359d9bc4daffd7d967f710eb">CC_Mqtt5ErrorCode_OutOfMemory</a> = 8
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaab6fafd05b6bf24bc9aaf17bae80f3cb1">CC_Mqtt5ErrorCode_BufferOverflow</a> = 9
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaab1b9e20d674c9a233e9bc36a1e3f5dfe">CC_Mqtt5ErrorCode_NotSupported</a> = 10
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaaca485d14f9a067504a7ed21f2998747f">CC_Mqtt5ErrorCode_RetryLater</a> = 11
 , <br />
-&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa504a9e92acd5ccde5ff31a3bc711982d">CC_Mqtt5ErrorCode_Terminating</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaab2dcbd4a84fdf4dd5c147fff6fbe62cc">CC_Mqtt5ErrorCode_NetworkDisconnected</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa95017579e8341ba51a551f4ef5277028">CC_Mqtt5ErrorCode_NotAuthenticated</a>
-, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaaa15711e81f414283e9f9a43e42a0c87b">CC_Mqtt5ErrorCode_ValuesLimit</a>
+&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa411161d50d11f4ba3ef12b34f5319a70">CC_Mqtt5ErrorCode_Disconnecting</a> = 12
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaab2dcbd4a84fdf4dd5c147fff6fbe62cc">CC_Mqtt5ErrorCode_NetworkDisconnected</a> = 13
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa95017579e8341ba51a551f4ef5277028">CC_Mqtt5ErrorCode_NotAuthenticated</a> = 14
+, <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaaff32d89715cd5675f31880083867dc46">CC_Mqtt5ErrorCode_PreparationLocked</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaaa15711e81f414283e9f9a43e42a0c87b">CC_Mqtt5ErrorCode_ValuesLimit</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gac9c64dc7d5a785e8b22d7faaaf6f9bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code returned by various API functions.  <a href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">More...</a><br /></td></tr>
@@ -384,11 +389,13 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac9c64dc7d5a785e8b22d7faaaf6f9beaaca485d14f9a067504a7ed21f2998747f"></a>CC_Mqtt5ErrorCode_RetryLater&#160;</td><td class="fielddoc"><p>Retry in next event loop iteration. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac9c64dc7d5a785e8b22d7faaaf6f9beaa504a9e92acd5ccde5ff31a3bc711982d"></a>CC_Mqtt5ErrorCode_Terminating&#160;</td><td class="fielddoc"><p>The client is in "terminating" state, (re)init is required. </p>
+<tr><td class="fieldname"><a id="ggac9c64dc7d5a785e8b22d7faaaf6f9beaa411161d50d11f4ba3ef12b34f5319a70"></a>CC_Mqtt5ErrorCode_Disconnecting&#160;</td><td class="fielddoc"><p>The client is in "disconnecting" state, (re)connect is required in the next iteration loop. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac9c64dc7d5a785e8b22d7faaaf6f9beaab2dcbd4a84fdf4dd5c147fff6fbe62cc"></a>CC_Mqtt5ErrorCode_NetworkDisconnected&#160;</td><td class="fielddoc"><p>When network is disconnected issueing new ops is not accepted. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac9c64dc7d5a785e8b22d7faaaf6f9beaa95017579e8341ba51a551f4ef5277028"></a>CC_Mqtt5ErrorCode_NotAuthenticated&#160;</td><td class="fielddoc"><p>The client not authenticated. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggac9c64dc7d5a785e8b22d7faaaf6f9beaaff32d89715cd5675f31880083867dc46"></a>CC_Mqtt5ErrorCode_PreparationLocked&#160;</td><td class="fielddoc"><p>Another operation is being prepared, cannot create a new one without performing "send" or "cancel". </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac9c64dc7d5a785e8b22d7faaaf6f9beaaa15711e81f414283e9f9a43e42a0c87b"></a>CC_Mqtt5ErrorCode_ValuesLimit&#160;</td><td class="fielddoc"><p>Limit for the values. </p>
 </td></tr>

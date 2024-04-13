@@ -81,6 +81,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaae103ca80d83357bab6cb5b100acd8da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reauth.html#gaae103ca80d83357bab6cb5b100acd8da">cc_mqtt5_client_reauth</a> (<a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt5AuthConfig.html">CC_Mqtt5AuthConfig</a> *config, <a class="el" href="group__reauth.html#ga4b0e66010307e1cb3e0c7ddfe0cba84c">CC_Mqtt5ReauthCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memdesc:gaae103ca80d83357bab6cb5b100acd8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare, configure, and send "reauth" request in one go.  <a href="group__reauth.html#gaae103ca80d83357bab6cb5b100acd8da">More...</a><br /></td></tr>
+<tr class="separator:gaae103ca80d83357bab6cb5b100acd8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaa6840ae288f91589cc61fcae7d882f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reauth.html#gaaa6840ae288f91589cc61fcae7d882f1">cc_mqtt5_client_reauth_add_user_prop</a> (<a class="el" href="group__reauth.html#ga08a25f014815be006a28a6729b1983b2">CC_Mqtt5ReauthHandle</a> handle, const <a class="el" href="structCC__Mqtt5UserProp.html">CC_Mqtt5UserProp</a> *prop)</td></tr>
 <tr class="memdesc:gaaa6840ae288f91589cc61fcae7d882f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add user property to the configuration of the "reauth" operation.  <a href="group__reauth.html#gaaa6840ae288f91589cc61fcae7d882f1">More...</a><br /></td></tr>
 <tr class="separator:gaaa6840ae288f91589cc61fcae7d882f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +154,63 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gaae103ca80d83357bab6cb5b100acd8da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae103ca80d83357bab6cb5b100acd8da">&#9670;&nbsp;</a></span>cc_mqtt5_client_reauth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> cc_mqtt5_client_reauth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gaf09e56d2f3d5de2219913de76a1704a9">CC_Mqtt5ClientHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structCC__Mqtt5AuthConfig.html">CC_Mqtt5AuthConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__reauth.html#ga4b0e66010307e1cb3e0c7ddfe0cba84c">CC_Mqtt5ReauthCompleteCb</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cbData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare, configure, and send "reauth" request in one go. </p>
+<p>Abstracts away sequence of the following functions invocation: </p><ul>
+<li><a class="el" href="group__reauth.html#gaa5a8c695cd0963130334b89dd8a8c87a">cc_mqtt5_client_reauth_prepare()</a> </li>
+<li><a class="el" href="group__reauth.html#gaee6d78cdb2f37aa3c600c46510ec01bc">cc_mqtt5_client_reauth_config_auth()</a> </li>
+<li><a class="el" href="group__reauth.html#ga0d0be616c870c39e8b6be117911dc92d">cc_mqtt5_client_reauth_send()</a></li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Auth configuration. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to be invoked when "reauth" operation is complete. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cbData</td><td>Pointer to any user data structure. It will passed as one of the parameters in callback invocation. May be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result code of the call. </dd></dl>
+
+</div>
+</div>
 <a id="gaaa6840ae288f91589cc61fcae7d882f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaa6840ae288f91589cc61fcae7d882f1">&#9670;&nbsp;</a></span>cc_mqtt5_client_reauth_add_user_prop()</h2>
 
@@ -337,7 +397,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prepare "reauth" operation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>For successful operation the client needs to be in the "connected" state and there is no other incomplete "reauth" operation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle returned by <a class="el" href="group__client.html#gaa955f88ddca4c7b695074312b5a8cbee">cc_mqtt5_client_alloc()</a> function. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">ec</td><td>Error code reporting result of the operation. Can be NULL. </td></tr>
@@ -345,7 +405,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Handle of the "reauth" operation, will be NULL in case of failure. To analyze the reason failure use "ec" output parameter. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>There is no other incomplete "reauth" operation. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>The "reauth" operation is allocated, use either <a class="el" href="group__reauth.html#ga0d0be616c870c39e8b6be117911dc92d">cc_mqtt5_client_reauth_send()</a> or <a class="el" href="group__reauth.html#ga9956e7644c5b3efdb601099c1ec404ba">cc_mqtt5_client_reauth_cancel()</a> to prevent memory leaks. </dd></dl>
 
 </div>

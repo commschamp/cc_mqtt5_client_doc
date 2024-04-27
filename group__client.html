@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CommsChampion Ecosystem MQTT5 Client: &quot;Client Data Types and Functions&quot;</title>
+<title>CommsChampion Ecosystem MQTT v5 Client: &quot;Client Data Types and Functions&quot;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CommsChampion Ecosystem MQTT5 Client
+   <div id="projectname">CommsChampion Ecosystem MQTT v5 Client
    </div>
-   <div id="projectbrief">MQTT5 Client Library.</div>
+   <div id="projectbrief">MQTT v5 Client Library.</div>
   </td>
  </tr>
  </tbody>
@@ -72,9 +72,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga84becfb57b38d64046e33a931129ed60"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#ga84becfb57b38d64046e33a931129ed60">CC_Mqtt5BrokerDisconnectReportCb</a>) (void *data, const <a class="el" href="structCC__Mqtt5DisconnectInfo.html">CC_Mqtt5DisconnectInfo</a> *info)</td></tr>
-<tr class="memdesc:ga84becfb57b38d64046e33a931129ed60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report unsolicited disconnection of the broker.  <a href="group__client.html#ga84becfb57b38d64046e33a931129ed60">More...</a><br /></td></tr>
-<tr class="separator:ga84becfb57b38d64046e33a931129ed60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb7c8c7342ebbc6883579d885f4dedb7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#gabb7c8c7342ebbc6883579d885f4dedb7">CC_Mqtt5BrokerDisconnectReportCb</a>) (void *data, <a class="el" href="group__global.html#gade2ba1fc06381168fc1c7c510a18bf41">CC_Mqtt5BrokerDisconnectReason</a> reason, const <a class="el" href="structCC__Mqtt5DisconnectInfo.html">CC_Mqtt5DisconnectInfo</a> *info)</td></tr>
+<tr class="memdesc:gabb7c8c7342ebbc6883579d885f4dedb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report unsolicited disconnection of the broker.  <a href="group__client.html#gabb7c8c7342ebbc6883579d885f4dedb7">More...</a><br /></td></tr>
+<tr class="separator:gabb7c8c7342ebbc6883579d885f4dedb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada43a479edab17c2994410985a80678c"><td class="memItemLeft" align="right" valign="top">typedef unsigned(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__client.html#gada43a479edab17c2994410985a80678c">CC_Mqtt5CancelNextTickWaitCb</a>) (void *data)</td></tr>
 <tr class="memdesc:gada43a479edab17c2994410985a80678c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to request termination of existing time measurement.  <a href="group__client.html#gada43a479edab17c2994410985a80678c">More...</a><br /></td></tr>
 <tr class="separator:gada43a479edab17c2994410985a80678c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,14 +153,14 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga84becfb57b38d64046e33a931129ed60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga84becfb57b38d64046e33a931129ed60">&#9670;&nbsp;</a></span>CC_Mqtt5BrokerDisconnectReportCb</h2>
+<a id="gabb7c8c7342ebbc6883579d885f4dedb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb7c8c7342ebbc6883579d885f4dedb7">&#9670;&nbsp;</a></span>CC_Mqtt5BrokerDisconnectReportCb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* CC_Mqtt5BrokerDisconnectReportCb) (void *data, const <a class="el" href="structCC__Mqtt5DisconnectInfo.html">CC_Mqtt5DisconnectInfo</a> *info)</td>
+          <td class="memname">typedef void(* CC_Mqtt5BrokerDisconnectReportCb) (void *data, <a class="el" href="group__global.html#gade2ba1fc06381168fc1c7c510a18bf41">CC_Mqtt5BrokerDisconnectReason</a> reason, const <a class="el" href="structCC__Mqtt5DisconnectInfo.html">CC_Mqtt5DisconnectInfo</a> *info)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,7 +169,8 @@ Functions</h2></td></tr>
 <p>When invoked the "info" is present <b>if and only if</b> the broker disconnection report is due to the reception of the <b>DISCONNECT</b> message from the broker. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to user data object, passed as the last parameter to the request call. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>Extra disconnect information when reported by the broker. Can be NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reason</td><td>Reson for reporting unsolicited broker disconnection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>Extra disconnect information when reported by the broker. Can be NULL. Not null, <b>if and only if</b> the <b>reason</b> is <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41a09669579bbc2bdd5883000490e99668b">CC_Mqtt5BrokerDisconnectReason_DisconnectMsg</a>. </td></tr>
   </table>
   </dd>
 </dl>

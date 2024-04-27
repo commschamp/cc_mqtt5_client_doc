@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CommsChampion Ecosystem MQTT5 Client: &quot;Global Data Types and Functions&quot;</title>
+<title>CommsChampion Ecosystem MQTT v5 Client: &quot;Global Data Types and Functions&quot;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CommsChampion Ecosystem MQTT5 Client
+   <div id="projectname">CommsChampion Ecosystem MQTT v5 Client
    </div>
-   <div id="projectbrief">MQTT5 Client Library.</div>
+   <div id="projectbrief">MQTT v5 Client Library.</div>
   </td>
  </tr>
  </tbody>
@@ -101,7 +101,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:gae44dc5dfbccf359b5c84b62400d61225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to create numeric version as single unsigned number. <br /></td></tr>
 <tr class="separator:gae44dc5dfbccf359b5c84b62400d61225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1725c46b37922b2e321f3b9b6fc58de9"><td class="memItemLeft" align="right" valign="top"><a id="ga1725c46b37922b2e321f3b9b6fc58de9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#ga1725c46b37922b2e321f3b9b6fc58de9">CC_MQTT5_CLIENT_MINOR_VERSION</a>&#160;&#160;&#160;4U</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#ga1725c46b37922b2e321f3b9b6fc58de9">CC_MQTT5_CLIENT_MINOR_VERSION</a>&#160;&#160;&#160;5U</td></tr>
 <tr class="memdesc:ga1725c46b37922b2e321f3b9b6fc58de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minor verion of the library. <br /></td></tr>
 <tr class="separator:ga1725c46b37922b2e321f3b9b6fc58de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga197f1268575d85f3c08c4ee3e8dd1c9a"><td class="memItemLeft" align="right" valign="top"><a id="ga197f1268575d85f3c08c4ee3e8dd1c9a"></a>
@@ -122,27 +122,38 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gabd56266bda747f19e4c6669fa0da021d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">CC_Mqtt5AsyncOpStatus</a> { <br />
-&#160;&#160;<a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da1612bd223303ddf181264c196d24855d">CC_Mqtt5AsyncOpStatus_Complete</a>
-, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da74d69b0e71d42515ba2e98bceb71f40b">CC_Mqtt5AsyncOpStatus_InternalError</a>
-, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da1a188d7ec8ccf7564fd680fd79a318eb">CC_Mqtt5AsyncOpStatus_Timeout</a>
-, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da071eb43b2ab5499d3bd753f083de10a7">CC_Mqtt5AsyncOpStatus_ProtocolError</a>
+&#160;&#160;<a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da1612bd223303ddf181264c196d24855d">CC_Mqtt5AsyncOpStatus_Complete</a> = 0
+, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da74d69b0e71d42515ba2e98bceb71f40b">CC_Mqtt5AsyncOpStatus_InternalError</a> = 1
+, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da1a188d7ec8ccf7564fd680fd79a318eb">CC_Mqtt5AsyncOpStatus_Timeout</a> = 2
+, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da071eb43b2ab5499d3bd753f083de10a7">CC_Mqtt5AsyncOpStatus_ProtocolError</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da805071d40ad1703c18988178c52804ff">CC_Mqtt5AsyncOpStatus_Aborted</a>
-, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da0f187c57434fb51740a8ecb4f8e97400">CC_Mqtt5AsyncOpStatus_BrokerDisconnected</a>
-, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021daad8480a96239bd4133b44636acf1f0fc">CC_Mqtt5AsyncOpStatus_OutOfMemory</a>
-, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da15668e5d52308a87d84e7e7bcd8568fd">CC_Mqtt5AsyncOpStatus_BadParam</a>
+&#160;&#160;<a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da805071d40ad1703c18988178c52804ff">CC_Mqtt5AsyncOpStatus_Aborted</a> = 4
+, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da0f187c57434fb51740a8ecb4f8e97400">CC_Mqtt5AsyncOpStatus_BrokerDisconnected</a> = 5
+, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021daad8480a96239bd4133b44636acf1f0fc">CC_Mqtt5AsyncOpStatus_OutOfMemory</a> = 6
+, <a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da15668e5d52308a87d84e7e7bcd8568fd">CC_Mqtt5AsyncOpStatus_BadParam</a> = 7
 , <br />
 &#160;&#160;<a class="el" href="group__global.html#ggabd56266bda747f19e4c6669fa0da021da8844764d4adc59dbaf819524f4c4fa0f">CC_Mqtt5AsyncOpStatus_ValuesLimit</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gabd56266bda747f19e4c6669fa0da021d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of the asynchronous operation.  <a href="group__global.html#gabd56266bda747f19e4c6669fa0da021d">More...</a><br /></td></tr>
 <tr class="separator:gabd56266bda747f19e4c6669fa0da021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2b0e4ecc24bfd83703e722793a0bca1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#gaa2b0e4ecc24bfd83703e722793a0bca1">CC_Mqtt5AuthErrorCode</a> { <a class="el" href="group__global.html#ggaa2b0e4ecc24bfd83703e722793a0bca1a73da94a53d477ad876e2a3133137fb30">CC_Mqtt5AuthErrorCode_Continue</a>
-, <a class="el" href="group__global.html#ggaa2b0e4ecc24bfd83703e722793a0bca1adea033704c194c4d575eee5d7f6c111f">CC_Mqtt5AuthErrorCode_Disconnect</a>
-, <a class="el" href="group__global.html#ggaa2b0e4ecc24bfd83703e722793a0bca1af434e93d01618c3010900b3a9bee9f20">CC_Mqtt5AuthErrorCode_ValuesLimit</a>
+<tr class="memitem:gaa2b0e4ecc24bfd83703e722793a0bca1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#gaa2b0e4ecc24bfd83703e722793a0bca1">CC_Mqtt5AuthErrorCode</a> { <a class="el" href="group__global.html#ggaa2b0e4ecc24bfd83703e722793a0bca1a73da94a53d477ad876e2a3133137fb30">CC_Mqtt5AuthErrorCode_Continue</a> = 0
+, <a class="el" href="group__global.html#ggaa2b0e4ecc24bfd83703e722793a0bca1adea033704c194c4d575eee5d7f6c111f">CC_Mqtt5AuthErrorCode_Disconnect</a> = 1
+, <a class="el" href="group__global.html#ggaa2b0e4ecc24bfd83703e722793a0bca1af434e93d01618c3010900b3a9bee9f20">CC_Mqtt5AuthErrorCode_ValuesLimit</a> = 2
  }</td></tr>
 <tr class="memdesc:gaa2b0e4ecc24bfd83703e722793a0bca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error code returned by the <a class="el" href="common_8h.html#a4763183da0cfbc4c0ec588d2ebf71430">CC_Mqtt5AuthCb</a> callback.  <a href="group__global.html#gaa2b0e4ecc24bfd83703e722793a0bca1">More...</a><br /></td></tr>
 <tr class="separator:gaa2b0e4ecc24bfd83703e722793a0bca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade2ba1fc06381168fc1c7c510a18bf41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#gade2ba1fc06381168fc1c7c510a18bf41">CC_Mqtt5BrokerDisconnectReason</a> { <br />
+&#160;&#160;<a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41a09669579bbc2bdd5883000490e99668b">CC_Mqtt5BrokerDisconnectReason_DisconnectMsg</a> = 0
+, <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41ac2fea441ef0791b9e2dfb15060fc3ceb">CC_Mqtt5BrokerDisconnectReason_InternalError</a> = 1
+, <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41af272b98a8c132feb12382adf02b6aaae">CC_Mqtt5BrokerDisconnectReason_NoBrokerResponse</a> = 2
+, <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41a3a32928f5e30d2e41cc5bde681937790">CC_Mqtt5BrokerDisconnectReason_ProtocolError</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41a6c3c3a90cf76ad9a46684e04e0f3aea8">CC_Mqtt5BrokerDisconnectReason_ValuesLimit</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gade2ba1fc06381168fc1c7c510a18bf41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reason for reporting unsolicited broker disconnection.  <a href="group__global.html#gade2ba1fc06381168fc1c7c510a18bf41">More...</a><br /></td></tr>
+<tr class="separator:gade2ba1fc06381168fc1c7c510a18bf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac9c64dc7d5a785e8b22d7faaaf6f9bea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#gac9c64dc7d5a785e8b22d7faaaf6f9bea">CC_Mqtt5ErrorCode</a> { <br />
 &#160;&#160;<a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaa8f6454b1f4f259f82322e3b5517a4d63">CC_Mqtt5ErrorCode_Success</a> = 0
 , <a class="el" href="group__global.html#ggac9c64dc7d5a785e8b22d7faaaf6f9beaad9fd7a1393b1854100ce3659aec37945">CC_Mqtt5ErrorCode_InternalError</a> = 1
@@ -173,7 +184,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__global.html#gga15e5d0f870e3f2afaeb44f5122e640d7ab9b4ffcbaf6e8dbed9d9f40af06e9fe1">CC_Mqtt5PayloadFormat_Utf8</a> = 1
 , <a class="el" href="group__global.html#gga15e5d0f870e3f2afaeb44f5122e640d7ae69b7c032f97c524fe40ffc9cec0cdb4">CC_Mqtt5PayloadFormat_ValuesLimit</a>
  }</td></tr>
-<tr class="memdesc:ga15e5d0f870e3f2afaeb44f5122e640d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload Format Indicator values as defined by the MQTT5 protocol.  <a href="group__global.html#ga15e5d0f870e3f2afaeb44f5122e640d7">More...</a><br /></td></tr>
+<tr class="memdesc:ga15e5d0f870e3f2afaeb44f5122e640d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload Format Indicator values as defined by the MQTT v5 protocol.  <a href="group__global.html#ga15e5d0f870e3f2afaeb44f5122e640d7">More...</a><br /></td></tr>
 <tr class="separator:ga15e5d0f870e3f2afaeb44f5122e640d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacfea3a318c3e2dd3d60c69a6a6157d7f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__global.html#gacfea3a318c3e2dd3d60c69a6a6157d7f">CC_Mqtt5QoS</a> { <a class="el" href="group__global.html#ggacfea3a318c3e2dd3d60c69a6a6157d7fa371c4d68d2d2c2ce9bd07927b22596fb">CC_Mqtt5QoS_AtMostOnceDelivery</a> = 0
 , <a class="el" href="group__global.html#ggacfea3a318c3e2dd3d60c69a6a6157d7fa7177e192e6dd58b2eae3b78eb671eec5">CC_Mqtt5QoS_AtLeastOnceDelivery</a> = 1
@@ -241,7 +252,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__global.html#gga7231ab939f4dd41f18a27ed953fda977adc5c7609d381d5dd1a82963f53b8ff15">CC_Mqtt5ReasonCode_WildcardSubsNotSupported</a> = 162
 <br />
  }</td></tr>
-<tr class="memdesc:ga7231ab939f4dd41f18a27ed953fda977"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Reason Code" as defined in MQTT5 specification  <a href="group__global.html#ga7231ab939f4dd41f18a27ed953fda977">More...</a><br /></td></tr>
+<tr class="memdesc:ga7231ab939f4dd41f18a27ed953fda977"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Reason Code" as defined in MQTT v5 specification  <a href="group__global.html#ga7231ab939f4dd41f18a27ed953fda977">More...</a><br /></td></tr>
 <tr class="separator:ga7231ab939f4dd41f18a27ed953fda977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -350,6 +361,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gade2ba1fc06381168fc1c7c510a18bf41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade2ba1fc06381168fc1c7c510a18bf41">&#9670;&nbsp;</a></span>CC_Mqtt5BrokerDisconnectReason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__global.html#gade2ba1fc06381168fc1c7c510a18bf41">CC_Mqtt5BrokerDisconnectReason</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reason for reporting unsolicited broker disconnection. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggade2ba1fc06381168fc1c7c510a18bf41a09669579bbc2bdd5883000490e99668b"></a>CC_Mqtt5BrokerDisconnectReason_DisconnectMsg&#160;</td><td class="fielddoc"><p>The broker sent <b>DISCONNECT</b> message. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggade2ba1fc06381168fc1c7c510a18bf41ac2fea441ef0791b9e2dfb15060fc3ceb"></a>CC_Mqtt5BrokerDisconnectReason_InternalError&#160;</td><td class="fielddoc"><p>The library encountered internal error and there is a need to close network connection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggade2ba1fc06381168fc1c7c510a18bf41af272b98a8c132feb12382adf02b6aaae"></a>CC_Mqtt5BrokerDisconnectReason_NoBrokerResponse&#160;</td><td class="fielddoc"><p>No messages from the broker and no response to <b>PINGREQ</b>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggade2ba1fc06381168fc1c7c510a18bf41a3a32928f5e30d2e41cc5bde681937790"></a>CC_Mqtt5BrokerDisconnectReason_ProtocolError&#160;</td><td class="fielddoc"><p>Protocol error was detected. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggade2ba1fc06381168fc1c7c510a18bf41a6c3c3a90cf76ad9a46684e04e0f3aea8"></a>CC_Mqtt5BrokerDisconnectReason_ValuesLimit&#160;</td><td class="fielddoc"><p>Limit for the values. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gac9c64dc7d5a785e8b22d7faaaf6f9bea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac9c64dc7d5a785e8b22d7faaaf6f9bea">&#9670;&nbsp;</a></span>CC_Mqtt5ErrorCode</h2>
 
@@ -415,7 +454,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Payload Format Indicator values as defined by the MQTT5 protocol. </p>
+<p>Payload Format Indicator values as defined by the MQTT v5 protocol. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga15e5d0f870e3f2afaeb44f5122e640d7a6b3fd41dbdd4cc9fcc27f530c4e86169"></a>CC_Mqtt5PayloadFormat_Unspecified&#160;</td><td class="fielddoc"><p>Unspecified format. </p>
 </td></tr>
@@ -465,7 +504,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>"Reason Code" as defined in MQTT5 specification </p>
+<p>"Reason Code" as defined in MQTT v5 specification </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7231ab939f4dd41f18a27ed953fda977aa1cb657ae4ad8917b3a8f1fda2b60e4a"></a>CC_Mqtt5ReasonCode_Success&#160;</td><td class="fielddoc"><p>value <b>Success</b>. </p>
 </td></tr>

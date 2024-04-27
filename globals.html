@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CommsChampion Ecosystem MQTT5 Client: File Members</title>
+<title>CommsChampion Ecosystem MQTT v5 Client: File Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CommsChampion Ecosystem MQTT5 Client
+   <div id="projectname">CommsChampion Ecosystem MQTT v5 Client
    </div>
-   <div id="projectbrief">MQTT5 Client Library.</div>
+   <div id="projectbrief">MQTT v5 Client Library.</div>
   </td>
  </tr>
  </tbody>
@@ -215,8 +215,8 @@ $(function() {
 <li>cc_mqtt5_client_publish_full()
 : <a class="el" href="group__publish.html#ga3f05f5d3b412ce6bd4fa724afecbee4e">client.h</a>
 </li>
-<li>cc_mqtt5_client_publish_get_out_of_order_allowed()
-: <a class="el" href="group__publish.html#ga1e0c485c1757b272eeb665644a00e3f1">client.h</a>
+<li>cc_mqtt5_client_publish_get_ordering()
+: <a class="el" href="group__publish.html#ga5389ff87af1e2982b0fd9122489b4ffd">client.h</a>
 </li>
 <li>cc_mqtt5_client_publish_get_resend_attempts()
 : <a class="el" href="group__publish.html#gac4cd4b0346ab8c622bc962b1a2f6386e">client.h</a>
@@ -236,8 +236,8 @@ $(function() {
 <li>cc_mqtt5_client_publish_send()
 : <a class="el" href="group__publish.html#gaf19c2d2953ee67a413877681fcf8fcc9">client.h</a>
 </li>
-<li>cc_mqtt5_client_publish_set_out_of_order_allowed()
-: <a class="el" href="group__publish.html#ga89b9db26de737fa9ddd7a0ad002765cd">client.h</a>
+<li>cc_mqtt5_client_publish_set_ordering()
+: <a class="el" href="group__publish.html#ga4f2facec3ef1b1150ad33f6241b9c7b4">client.h</a>
 </li>
 <li>cc_mqtt5_client_publish_set_resend_attempts()
 : <a class="el" href="group__publish.html#gae8e04a144f923f3e5829c3522b1f22ba">client.h</a>
@@ -431,8 +431,26 @@ $(function() {
 <li>CC_Mqtt5AuthErrorCode_ValuesLimit
 : <a class="el" href="group__global.html#ggaa2b0e4ecc24bfd83703e722793a0bca1af434e93d01618c3010900b3a9bee9f20">common.h</a>
 </li>
+<li>CC_Mqtt5BrokerDisconnectReason
+: <a class="el" href="group__global.html#gade2ba1fc06381168fc1c7c510a18bf41">common.h</a>
+</li>
+<li>CC_Mqtt5BrokerDisconnectReason_DisconnectMsg
+: <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41a09669579bbc2bdd5883000490e99668b">common.h</a>
+</li>
+<li>CC_Mqtt5BrokerDisconnectReason_InternalError
+: <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41ac2fea441ef0791b9e2dfb15060fc3ceb">common.h</a>
+</li>
+<li>CC_Mqtt5BrokerDisconnectReason_NoBrokerResponse
+: <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41af272b98a8c132feb12382adf02b6aaae">common.h</a>
+</li>
+<li>CC_Mqtt5BrokerDisconnectReason_ProtocolError
+: <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41a3a32928f5e30d2e41cc5bde681937790">common.h</a>
+</li>
+<li>CC_Mqtt5BrokerDisconnectReason_ValuesLimit
+: <a class="el" href="group__global.html#ggade2ba1fc06381168fc1c7c510a18bf41a6c3c3a90cf76ad9a46684e04e0f3aea8">common.h</a>
+</li>
 <li>CC_Mqtt5BrokerDisconnectReportCb
-: <a class="el" href="group__client.html#ga84becfb57b38d64046e33a931129ed60">common.h</a>
+: <a class="el" href="group__client.html#gabb7c8c7342ebbc6883579d885f4dedb7">common.h</a>
 </li>
 <li>CC_Mqtt5CancelNextTickWaitCb
 : <a class="el" href="group__client.html#gada43a479edab17c2994410985a80678c">common.h</a>
@@ -529,6 +547,18 @@ $(function() {
 </li>
 <li>CC_Mqtt5PublishHandle
 : <a class="el" href="group__publish.html#ga14db4a399e646903cbe72691616ef9c4">common.h</a>
+</li>
+<li>CC_Mqtt5PublishOrdering
+: <a class="el" href="group__publish.html#gac670d5217c079165d7c438648e28215f">common.h</a>
+</li>
+<li>CC_Mqtt5PublishOrdering_Full
+: <a class="el" href="group__publish.html#ggac670d5217c079165d7c438648e28215fa675765052d939c28676fb6b06bfa48a7">common.h</a>
+</li>
+<li>CC_Mqtt5PublishOrdering_SameQos
+: <a class="el" href="group__publish.html#ggac670d5217c079165d7c438648e28215fa7f2c1494e952d42f09b434e09fc715bd">common.h</a>
+</li>
+<li>CC_Mqtt5PublishOrdering_ValuesLimit
+: <a class="el" href="group__publish.html#ggac670d5217c079165d7c438648e28215facd684a669069eb6a090911cea2a1dc2e">common.h</a>
 </li>
 <li>CC_Mqtt5QoS
 : <a class="el" href="group__global.html#gacfea3a318c3e2dd3d60c69a6a6157d7f">common.h</a>

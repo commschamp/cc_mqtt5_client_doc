@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['rauth_20operation_0',['Preparing &quot;Rauth&quot; Operation.',['../index.html#doc_cc_mqtt5_client_reauth_prepare',1,'']]],
+  ['re_20authenticate_20operation_20data_20type_20and_20functions_1',['&quot;Re-authenticate Operation Data Type and Functions&quot;',['../group__reauth.html',1,'']]],
+  ['re_20authenticating_2',['Re-Authenticating',['../index.html#doc_cc_mqtt5_client_reauth',1,'']]],
+  ['re_20authentication_20handshake_20configuration_3',['(Re)Authentication Handshake Configuration',['../index.html#doc_cc_mqtt5_client_reauth_auth',1,'']]],
+  ['re_20authentication_20request_4',['Sending Re-Authentication Request',['../index.html#doc_cc_mqtt5_client_reauth_send',1,'']]],
+  ['re_20send_20attempts_5',['Configuring &quot;Publish&quot; Re-Send Attempts',['../index.html#doc_cc_mqtt5_client_publish_resend',1,'']]],
+  ['reauth_20operation_6',['Cancel the &quot;Reauth&quot; Operation.',['../index.html#doc_cc_mqtt5_client_reauth_cancel',1,'']]],
+  ['reauth_20operation_20preparation_7',['Simplifying the &quot;Reauth&quot; Operation Preparation.',['../index.html#doc_cc_mqtt5_client_reauth_simplify',1,'']]],
+  ['reauth_20response_20timeout_8',['Configuring &quot;Reauth&quot; Response Timeout',['../index.html#doc_cc_mqtt5_client_reauth_response_timeout',1,'']]],
+  ['receive_20maximum_20set_20by_20the_20broker_9',['Exceeding &quot;Receive Maximum&quot; Set by the Broker',['../index.html#doc_cc_mqtt5_client_publish_recv_max',1,'']]],
+  ['receive_20messages_10',['Subscribing to Receive Messages',['../index.html#doc_cc_mqtt5_client_subscribe',1,'']]],
+  ['received_20message_11',['Reporting Received Message',['../index.html#doc_cc_mqtt5_client_callbacks_message',1,'']]],
+  ['receiving_20disconnect_20message_12',['Receiving DISCONNECT message',['../index.html#doc_cc_mqtt5_client_unsolicited_disconnect_msg',1,'']]],
+  ['receiving_20messages_13',['Receiving Messages',['../index.html#doc_cc_mqtt5_client_receive',1,'']]],
+  ['reception_14',['Unsubscribing from Message Reception',['../index.html#doc_cc_mqtt5_client_unsubscribe',1,'']]],
+  ['registration_15',['&quot;Must Have&quot; Callbacks Registration',['../index.html#doc_cc_mqtt5_client_callbacks',1,'']]],
+  ['remains_20connected_16',['Check The Library Remains Connected',['../index.html#doc_cc_mqtt5_client_connect_check',1,'']]],
+  ['reporting_20incoming_20data_17',['Reporting Incoming Data',['../index.html#doc_cc_mqtt5_client_data',1,'']]],
+  ['reporting_20received_20message_18',['Reporting Received Message',['../index.html#doc_cc_mqtt5_client_callbacks_message',1,'']]],
+  ['reporting_20unsolicited_20broker_20disconnection_19',['Reporting Unsolicited Broker Disconnection',['../index.html#doc_cc_mqtt5_client_callbacks_broker_disconnect',1,'']]],
+  ['request_20',['request',['../index.html#doc_cc_mqtt5_client_connect_send',1,'Sending Connection Request'],['../index.html#doc_cc_mqtt5_client_disconnect_send',1,'Sending Disconnection Request'],['../index.html#doc_cc_mqtt5_client_publish_send',1,'Sending Publish Request'],['../index.html#doc_cc_mqtt5_client_reauth_send',1,'Sending Re-Authentication Request'],['../index.html#doc_cc_mqtt5_client_subscribe_send',1,'Sending Subscription Request'],['../index.html#doc_cc_mqtt5_client_unsubscribe_send',1,'Sending Unsubscription Request']]],
+  ['response_20timeout_21',['response timeout',['../index.html#doc_cc_mqtt5_client_connect_response_timeout',1,'Configuring &quot;Connect&quot; Response Timeout'],['../index.html#doc_cc_mqtt5_client_publish_response_timeout',1,'Configuring &quot;Publish&quot; Response Timeout'],['../index.html#doc_cc_mqtt5_client_reauth_response_timeout',1,'Configuring &quot;Reauth&quot; Response Timeout'],['../index.html#doc_cc_mqtt5_client_subscribe_response_timeout',1,'Configuring &quot;Subscribe&quot; Response Timeout'],['../index.html#doc_cc_mqtt5_client_unsubscribe_response_timeout',1,'Configuring &quot;Unsubscribe&quot; Response Timeout'],['../index.html#doc_cc_mqtt5_client_response_timeout',1,'Default Response Timeout']]]
+];
